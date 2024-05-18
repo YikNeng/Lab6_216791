@@ -10,7 +10,8 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
-        FIREBASE_PROJECT: "lab6-216791-77787"
+        FIREBASE_PROJECT: "Lab6-216791
+"
     scripts:
       - name: Get flutter packages
         script: |
@@ -30,7 +31,7 @@ workflows:
       - name: Run Firebase Test Lab Tests
         script: |
           set -ex
-          echo $GCLOUD_KEY_FILE > ./gcloud_key_file.json
+          echo $GCLOUD_KEY_FILE | base64 --decode > ./gcloud_key_file.json
           gcloud auth activate-service-account --key-file=gcloud_key_file.json
           gcloud --quiet config set project $FIREBASE_PROJECT
 
