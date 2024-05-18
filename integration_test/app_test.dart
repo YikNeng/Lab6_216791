@@ -27,9 +27,14 @@ void main() {
             isChecked: false,
             hasEnabledState: true,
             isEnabled: true,
-            isFocusable: true),
+            isFocusable: true,
+            isHidden: false),
       );
 
+      await tester.ensureVisible(tncCheckbox);
+      await tester.pumpAndSettle();
+
+      expect(tncCheckbox, findsOneWidget);
       await tester.tap(tncCheckbox);
       await tester.pumpAndSettle();
 
@@ -41,7 +46,8 @@ void main() {
             isChecked: true,
             hasEnabledState: true,
             isEnabled: true,
-            isFocusable: true),
+            isFocusable: true,
+            isHidden: false),
       );
 
       await tester.tap(getOTPButton);
@@ -71,9 +77,17 @@ void main() {
       final chartFactory1button = find.byType(ElevatedButton).first;
       final chartFactory2button = find.byType(TextButton).first;
 
+      await tester.ensureVisible(chartFactory1button);
+      await tester.pumpAndSettle();
+
+      expect(chartFactory1button, findsOneWidget);
       await tester.tap(chartFactory1button);
       await tester.pumpAndSettle();
 
+      await tester.ensureVisible(chartFactory2button);
+      await tester.pumpAndSettle();
+
+      expect(chartFactory2button, findsOneWidget);
       await tester.tap(chartFactory2button);
       await tester.pumpAndSettle();
 
@@ -90,15 +104,31 @@ void main() {
       final editButton1 = find.byKey(const Key("edit 1"));
       final editButton2 = find.byKey(const Key("edit 2"));
 
+      await tester.ensureVisible(notiFactory2button);
+      await tester.pumpAndSettle();
+
+      expect(notiFactory2button, findsOneWidget);
       await tester.tap(notiFactory2button);
       await tester.pumpAndSettle();
 
+      await tester.ensureVisible(editButton2);
+      await tester.pumpAndSettle();
+
+      expect(editButton2, findsOneWidget);
       await tester.tap(editButton2);
       await tester.pumpAndSettle();
 
+      await tester.ensureVisible(notiFactory1button);
+      await tester.pumpAndSettle();
+
+      expect(notiFactory1button, findsOneWidget);
       await tester.tap(notiFactory1button);
       await tester.pumpAndSettle();
 
+      await tester.ensureVisible(editButton1);
+      await tester.pumpAndSettle();
+
+      expect(editButton1, findsOneWidget);
       await tester.tap(editButton1);
       await tester.pumpAndSettle();
 
@@ -131,9 +161,17 @@ void main() {
       final profileFactory2button = find.byType(TextButton).first;
       final addEngineerButton = find.byType(ElevatedButton).first;
 
+      await tester.ensureVisible(profileFactory2button);
+      await tester.pumpAndSettle();
+
+      expect(profileFactory2button, findsOneWidget);
       await tester.tap(profileFactory2button);
       await tester.pumpAndSettle();
 
+      await tester.ensureVisible(profileFactory1button);
+      await tester.pumpAndSettle();
+
+      expect(profileFactory1button, findsOneWidget);
       await tester.tap(profileFactory1button);
       await tester.pumpAndSettle();
 
