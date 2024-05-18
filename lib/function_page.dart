@@ -100,7 +100,7 @@ class _FunctionPageState extends State<FunctionPage> {
                                 '1549.7kw',
                                 style: TextStyle(
                                     fontWeight: FontWeight.w900,
-                                    fontSize: isTablet ? 40 : 30),
+                                    fontSize: isTablet ? 40 : 25),
                               ),
                             ),
                             Expanded(
@@ -147,7 +147,7 @@ class _FunctionPageState extends State<FunctionPage> {
                             ),
                             Text(
                               '$formattedDate $formattedTime',
-                              style: TextStyle(fontSize: isTablet ? 30 : 20),
+                              style: TextStyle(fontSize: isTablet ? 30 : 17),
                             ),
                           ],
                         ),
@@ -181,12 +181,12 @@ class _FunctionPageState extends State<FunctionPage> {
                               children: [
                                 Icon(
                                   Icons.factory,
-                                  size: isTablet ? 50 : 40,
+                                  size: isTablet ? 50 : 35,
                                 ),
                                 Text(
                                   'Factory 1',
                                   style:
-                                      TextStyle(fontSize: isTablet ? 30 : 20),
+                                      TextStyle(fontSize: isTablet ? 30 : 16),
                                 ),
                               ],
                             ),
@@ -215,12 +215,12 @@ class _FunctionPageState extends State<FunctionPage> {
                               children: [
                                 Icon(
                                   Icons.factory,
-                                  size: isTablet ? 50 : 40,
+                                  size: isTablet ? 50 : 35,
                                 ),
                                 Text(
                                   'Factory 2',
                                   style:
-                                      TextStyle(fontSize: isTablet ? 30 : 20),
+                                      TextStyle(fontSize: isTablet ? 30 : 16),
                                 ),
                               ],
                             ),
@@ -262,7 +262,7 @@ class _FunctionPageState extends State<FunctionPage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(Icons.warning,
-                                          size: isTablet ? 40 : 30.0),
+                                          size: isTablet ? 40 : 25),
                                       Padding(
                                         padding:
                                             const EdgeInsets.only(left: 8.0),
@@ -270,7 +270,7 @@ class _FunctionPageState extends State<FunctionPage> {
                                           'ERROR: Unreachable!',
                                           style: TextStyle(
                                               fontWeight: FontWeight.w900,
-                                              fontSize: isTablet ? 40 : 30),
+                                              fontSize: isTablet ? 40 : 25),
                                         ),
                                       ),
                                     ],
@@ -358,12 +358,12 @@ class _FunctionPageState extends State<FunctionPage> {
                                   children: [
                                     Icon(
                                       Icons.factory,
-                                      size: isTablet ? 50 : 40,
+                                      size: isTablet ? 50 : 35,
                                     ),
                                     Text(
                                       'Factory 1',
                                       style: TextStyle(
-                                          fontSize: isTablet ? 30 : 20),
+                                          fontSize: isTablet ? 30 : 16),
                                     ),
                                   ],
                                 ),
@@ -391,12 +391,12 @@ class _FunctionPageState extends State<FunctionPage> {
                                   children: [
                                     Icon(
                                       Icons.factory,
-                                      size: isTablet ? 50 : 40,
+                                      size: isTablet ? 50 : 35,
                                     ),
                                     Text(
                                       'Factory 2',
                                       style: TextStyle(
-                                          fontSize: isTablet ? 30 : 20),
+                                          fontSize: isTablet ? 30 : 16),
                                     ),
                                   ],
                                 ),

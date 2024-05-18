@@ -29,7 +29,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
             ),
             Image.asset(
               'images/UPM_logo.jpg',
-              width: isTablet ? 350 : 250.0,
+              width: isTablet ? 350 : 200.0,
             ),
             const SizedBox(
               height: 10,
@@ -41,7 +41,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                 'Welcome!',
                 textAlign: TextAlign.left,
                 style: TextStyle(
-                  fontSize: isTablet ? 55 : 45,
+                  fontSize: isTablet ? 55 : 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -50,7 +50,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
               child: Column(
                 children: [
                   Container(
-                    height: screenSize.height / 2,
+                    height: screenSize.height * 0.55,
                     width: screenSize.width * 0.9,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -76,7 +76,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                                 child: Text(
                                   'Enter the activation code you\nreceived via SMS.',
                                   style: TextStyle(
-                                    fontSize: isTablet ? 33 : 23,
+                                    fontSize: isTablet ? 33 : 18,
                                   ),
                                 ),
                               ),
@@ -85,7 +85,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                                     const EdgeInsets.only(left: 20, top: 20),
                                 child: Icon(
                                   Icons.info_outline,
-                                  size: isTablet ? 45 : 35,
+                                  size: isTablet ? 45 : 30,
                                 ),
                               ),
                             ],
@@ -103,7 +103,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                               decoration: InputDecoration(
                                 hintText: 'OTP',
                                 hintStyle:
-                                    TextStyle(fontSize: isTablet ? 32 : 22),
+                                    TextStyle(fontSize: isTablet ? 32 : 18),
                                 filled: true,
                                 fillColor: Colors.white,
                                 border: const OutlineInputBorder(),
@@ -120,7 +120,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                               ),
                               child: Text(
                                 '0/6',
-                                style: TextStyle(fontSize: isTablet ? 27 : 17),
+                                style: TextStyle(fontSize: isTablet ? 27 : 14),
                               ),
                             ),
                           ],
@@ -131,12 +131,12 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                           children: [
                             Text(
                               'Didn\'t Receive? ',
-                              style: TextStyle(fontSize: isTablet ? 27 : 17),
+                              style: TextStyle(fontSize: isTablet ? 27 : 14),
                             ),
                             Text(
                               'Tap Here',
                               style: TextStyle(
-                                  fontSize: isTablet ? 27 : 17,
+                                  fontSize: isTablet ? 27 : 14,
                                   color: Colors.blue,
                                   decoration: TextDecoration.underline),
                             ),
@@ -147,7 +147,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                             key: const Key("activate"),
                             child: Text(
                               'Activate',
-                              style: TextStyle(fontSize: isTablet ? 30 : 20),
+                              style: TextStyle(fontSize: isTablet ? 30 : 15),
                             ),
                             onPressed: () {
                               Navigator.push(
@@ -168,7 +168,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                         Text(
                           'Disclaimer | Privacy Statement',
                           style: TextStyle(
-                              fontSize: isTablet ? 27 : 17,
+                              fontSize: isTablet ? 27 : 14,
                               decoration: TextDecoration.underline,
                               color: Colors.blue),
                         ),
@@ -181,7 +181,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                         'Copyright UPM & Kejuruteraan Minyak Sawit\nCCS Sdn. Bhd.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: isTablet ? 27 : 17,
+                          fontSize: isTablet ? 27 : 14,
                         )),
                   ),
                 ],

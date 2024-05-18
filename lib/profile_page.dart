@@ -109,7 +109,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                         'Factory unreachable, unable to add',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontSize: isTablet ? 30 : 20,
+                                          fontSize: isTablet ? 30 : 15,
                                           color: Colors.red,
                                         ),
                                       ),
@@ -151,12 +151,12 @@ class _ProfilePageState extends State<ProfilePage> {
                               children: [
                                 Icon(
                                   Icons.factory,
-                                  size: isTablet ? 50 : 40,
+                                  size: isTablet ? 50 : 35,
                                 ),
                                 Text(
                                   'Factory 1',
                                   style:
-                                      TextStyle(fontSize: isTablet ? 30 : 20),
+                                      TextStyle(fontSize: isTablet ? 30 : 15),
                                 ),
                               ],
                             ),
@@ -184,12 +184,12 @@ class _ProfilePageState extends State<ProfilePage> {
                               children: [
                                 Icon(
                                   Icons.factory,
-                                  size: isTablet ? 50 : 40,
+                                  size: isTablet ? 50 : 35,
                                 ),
                                 Text(
                                   'Factory 2',
                                   style:
-                                      TextStyle(fontSize: isTablet ? 30 : 20),
+                                      TextStyle(fontSize: isTablet ? 30 : 15),
                                 ),
                               ],
                             ),
@@ -441,12 +441,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                   children: [
                                     Icon(
                                       Icons.factory,
-                                      size: isTablet ? 50 : 40,
+                                      size: isTablet ? 50 : 35,
                                     ),
                                     Text(
                                       'Factory 1',
                                       style: TextStyle(
-                                          fontSize: isTablet ? 30 : 20),
+                                          fontSize: isTablet ? 30 : 15),
                                     ),
                                   ],
                                 ),
@@ -475,12 +475,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                   children: [
                                     Icon(
                                       Icons.factory,
-                                      size: isTablet ? 50 : 40,
+                                      size: isTablet ? 50 : 35,
                                     ),
                                     Text(
                                       'Factory 2',
                                       style: TextStyle(
-                                          fontSize: isTablet ? 30 : 20),
+                                          fontSize: isTablet ? 30 : 15),
                                     ),
                                   ],
                                 ),

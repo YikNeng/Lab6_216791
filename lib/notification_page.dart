@@ -121,13 +121,13 @@ class _NotificationPageState extends State<NotificationPage> {
                                           'Minimum Threshold',
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: isTablet ? 33 : 23,
+                                            fontSize: isTablet ? 33 : 18,
                                           ),
                                         ),
                                       ),
                                       Icon(
                                         Icons.info_outline,
-                                        size: isTablet ? 45 : 35,
+                                        size: isTablet ? 45 : 30,
                                       ),
                                     ],
                                   ),
@@ -138,7 +138,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                         onPressed: () {},
                                         child: Icon(
                                           Icons.edit,
-                                          size: isTablet ? 40 : 30,
+                                          size: isTablet ? 40 : 25,
                                         )),
                                   )
                                 ],
@@ -159,12 +159,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                             Text(
                                               'Steam Pressure',
                                               style: TextStyle(
-                                                  fontSize: isTablet ? 35 : 25,
+                                                  fontSize: isTablet ? 35 : 20,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                             Container(
                                               height: screenSize.height / 16,
-                                              width: screenSize.width / 4,
+                                              width: screenSize.width / 3.5,
                                               decoration: BoxDecoration(
                                                 border: Border.all(
                                                     color: Colors.black),
@@ -198,7 +198,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                       style: TextStyle(
                                                           fontSize: isTablet
                                                               ? 35
-                                                              : 25),
+                                                              : 20),
                                                     ),
                                                   ),
                                                 ],
@@ -211,12 +211,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                             Text(
                                               'Steam Flow',
                                               style: TextStyle(
-                                                  fontSize: isTablet ? 35 : 25,
+                                                  fontSize: isTablet ? 35 : 20,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                             Container(
                                               height: screenSize.height / 16,
-                                              width: screenSize.width / 4,
+                                              width: screenSize.width / 3.5,
                                               decoration: BoxDecoration(
                                                 border: Border.all(
                                                     color: Colors.black),
@@ -250,7 +250,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                       style: TextStyle(
                                                           fontSize: isTablet
                                                               ? 35
-                                                              : 25),
+                                                              : 20),
                                                     ),
                                                   ),
                                                 ],
@@ -271,12 +271,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                             Text(
                                               'Water Level',
                                               style: TextStyle(
-                                                  fontSize: isTablet ? 35 : 25,
+                                                  fontSize: isTablet ? 35 : 20,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                             Container(
                                               height: screenSize.height / 16,
-                                              width: screenSize.width / 4,
+                                              width: screenSize.width / 3.5,
                                               decoration: BoxDecoration(
                                                 border: Border.all(
                                                     color: Colors.black),
@@ -310,7 +310,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                       style: TextStyle(
                                                           fontSize: isTablet
                                                               ? 35
-                                                              : 25),
+                                                              : 20),
                                                     ),
                                                   ),
                                                 ],
@@ -323,12 +323,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                             Text(
                                               'Power Frequency',
                                               style: TextStyle(
-                                                  fontSize: isTablet ? 35 : 25,
+                                                  fontSize: isTablet ? 35 : 20,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                             Container(
                                               height: screenSize.height / 16,
-                                              width: screenSize.width / 4,
+                                              width: screenSize.width / 3.5,
                                               decoration: BoxDecoration(
                                                 border: Border.all(
                                                     color: Colors.black),
@@ -362,7 +362,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                       style: TextStyle(
                                                           fontSize: isTablet
                                                               ? 35
-                                                              : 25),
+                                                              : 20),
                                                     ),
                                                   ),
                                                 ],
@@ -391,7 +391,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                       'Factory unreachable, unable to edit',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        fontSize: isTablet ? 30 : 20,
+                                        fontSize: isTablet ? 30 : 15,
                                         color: Colors.red,
                                       ),
                                     ),
@@ -432,12 +432,12 @@ class _NotificationPageState extends State<NotificationPage> {
                               children: [
                                 Icon(
                                   Icons.factory,
-                                  size: isTablet ? 50 : 40,
+                                  size: isTablet ? 50 : 35,
                                 ),
                                 Text(
                                   'Factory 1',
                                   style:
-                                      TextStyle(fontSize: isTablet ? 30 : 20),
+                                      TextStyle(fontSize: isTablet ? 30 : 15),
                                 ),
                               ],
                             ),
@@ -465,12 +465,12 @@ class _NotificationPageState extends State<NotificationPage> {
                               children: [
                                 Icon(
                                   Icons.factory,
-                                  size: isTablet ? 50 : 40,
+                                  size: isTablet ? 50 : 35,
                                 ),
                                 Text(
                                   'Factory 2',
                                   style:
-                                      TextStyle(fontSize: isTablet ? 30 : 20),
+                                      TextStyle(fontSize: isTablet ? 30 : 15),
                                 ),
                               ],
                             ),
@@ -526,13 +526,13 @@ class _NotificationPageState extends State<NotificationPage> {
                                               'Minimum Threshold',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: isTablet ? 33 : 23,
+                                                fontSize: isTablet ? 33 : 18,
                                               ),
                                             ),
                                           ),
                                           Icon(
                                             Icons.info_outline,
-                                            size: isTablet ? 45 : 35,
+                                            size: isTablet ? 45 : 30,
                                           ),
                                         ],
                                       ),
@@ -544,7 +544,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                             onPressed: () {},
                                             child: Icon(
                                               Icons.edit,
-                                              size: isTablet ? 40 : 30,
+                                              size: isTablet ? 40 : 25,
                                             )),
                                       )
                                     ],
@@ -564,14 +564,14 @@ class _NotificationPageState extends State<NotificationPage> {
                                                   'Steam Pressure',
                                                   style: TextStyle(
                                                       fontSize:
-                                                          isTablet ? 35 : 25,
+                                                          isTablet ? 35 : 20,
                                                       fontWeight:
                                                           FontWeight.bold),
                                                 ),
                                                 Container(
                                                   height:
                                                       screenSize.height / 16,
-                                                  width: screenSize.width / 4,
+                                                  width: screenSize.width / 3.5,
                                                   decoration: BoxDecoration(
                                                     border: Border.all(
                                                         color: Colors.black),
@@ -595,7 +595,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                             style: TextStyle(
                                                               fontSize: isTablet
                                                                   ? 35
-                                                                  : 25,
+                                                                  : 20,
                                                             ),
                                                             decoration:
                                                                 const InputDecoration(
@@ -622,7 +622,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                           style: TextStyle(
                                                             fontSize: isTablet
                                                                 ? 35
-                                                                : 25,
+                                                                : 20,
                                                           ),
                                                         ),
                                                       ),
@@ -637,14 +637,14 @@ class _NotificationPageState extends State<NotificationPage> {
                                                   'Steam Flow',
                                                   style: TextStyle(
                                                       fontSize:
-                                                          isTablet ? 35 : 25,
+                                                          isTablet ? 35 : 20,
                                                       fontWeight:
                                                           FontWeight.bold),
                                                 ),
                                                 Container(
                                                   height:
                                                       screenSize.height / 16,
-                                                  width: screenSize.width / 4,
+                                                  width: screenSize.width / 3.5,
                                                   decoration: BoxDecoration(
                                                     border: Border.all(
                                                         color: Colors.black),
@@ -669,7 +669,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                 fontSize:
                                                                     isTablet
                                                                         ? 35
-                                                                        : 25),
+                                                                        : 20),
                                                             decoration:
                                                                 const InputDecoration(
                                                                     border:
@@ -695,7 +695,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                           style: TextStyle(
                                                               fontSize: isTablet
                                                                   ? 35
-                                                                  : 25),
+                                                                  : 20),
                                                         ),
                                                       ),
                                                     ],
@@ -717,14 +717,14 @@ class _NotificationPageState extends State<NotificationPage> {
                                                   'Water Level',
                                                   style: TextStyle(
                                                       fontSize:
-                                                          isTablet ? 35 : 25,
+                                                          isTablet ? 35 : 20,
                                                       fontWeight:
                                                           FontWeight.bold),
                                                 ),
                                                 Container(
                                                   height:
                                                       screenSize.height / 16,
-                                                  width: screenSize.width / 4,
+                                                  width: screenSize.width / 3.5,
                                                   decoration: BoxDecoration(
                                                     border: Border.all(
                                                         color: Colors.black),
@@ -749,7 +749,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                 fontSize:
                                                                     isTablet
                                                                         ? 35
-                                                                        : 25),
+                                                                        : 20),
                                                             decoration:
                                                                 const InputDecoration(
                                                                     border:
@@ -777,7 +777,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                           style: TextStyle(
                                                               fontSize: isTablet
                                                                   ? 35
-                                                                  : 25),
+                                                                  : 20),
                                                         ),
                                                       ),
                                                     ],
@@ -791,14 +791,14 @@ class _NotificationPageState extends State<NotificationPage> {
                                                   'Power Frequency',
                                                   style: TextStyle(
                                                       fontSize:
-                                                          isTablet ? 35 : 25,
+                                                          isTablet ? 35 : 20,
                                                       fontWeight:
                                                           FontWeight.bold),
                                                 ),
                                                 Container(
                                                   height:
                                                       screenSize.height / 16,
-                                                  width: screenSize.width / 4,
+                                                  width: screenSize.width / 3.5,
                                                   decoration: BoxDecoration(
                                                     border: Border.all(
                                                         color: Colors.black),
@@ -823,7 +823,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                 fontSize:
                                                                     isTablet
                                                                         ? 35
-                                                                        : 25),
+                                                                        : 20),
                                                             decoration:
                                                                 const InputDecoration(
                                                                     border:
@@ -849,7 +849,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                                           style: TextStyle(
                                                               fontSize: isTablet
                                                                   ? 35
-                                                                  : 25),
+                                                                  : 20),
                                                         ),
                                                       ),
                                                     ],
@@ -894,12 +894,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                   children: [
                                     Icon(
                                       Icons.factory,
-                                      size: isTablet ? 50 : 40,
+                                      size: isTablet ? 50 : 35,
                                     ),
                                     Text(
                                       'Factory 1',
                                       style: TextStyle(
-                                          fontSize: isTablet ? 30 : 20),
+                                          fontSize: isTablet ? 30 : 15),
                                     ),
                                   ],
                                 ),
@@ -928,12 +928,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                   children: [
                                     Icon(
                                       Icons.factory,
-                                      size: isTablet ? 50 : 40,
+                                      size: isTablet ? 50 : 35,
                                     ),
                                     Text(
                                       'Factory 2',
                                       style: TextStyle(
-                                          fontSize: isTablet ? 30 : 20),
+                                          fontSize: isTablet ? 30 : 15),
                                     ),
                                   ],
                                 ),

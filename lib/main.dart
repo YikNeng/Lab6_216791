@@ -49,7 +49,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
             ),
             Image.asset(
               'images/UPM_logo.jpg',
-              width: isTablet ? 350 : 250.0,
+              width: isTablet ? 350 : 200.0,
             ),
             const SizedBox(
               height: 10,
@@ -61,7 +61,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                 'Welcome!',
                 textAlign: TextAlign.left,
                 style: TextStyle(
-                  fontSize: isTablet ? 55 : 45,
+                  fontSize: isTablet ? 55 : 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -70,7 +70,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
               child: Column(
                 children: [
                   Container(
-                    height: screenSize.height / 2,
+                    height: screenSize.height * 0.55,
                     width: screenSize.width * 0.9,
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 226, 187, 184),
@@ -93,7 +93,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                               child: Text(
                                 'Enter your mobile number to\nactivate your account.',
                                 style: TextStyle(
-                                  fontSize: isTablet ? 33 : 23,
+                                  fontSize: isTablet ? 33 : 18,
                                 ),
                               ),
                             ),
@@ -101,13 +101,13 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                               padding: const EdgeInsets.only(left: 20, top: 20),
                               child: Icon(
                                 Icons.info_outline,
-                                size: isTablet ? 45 : 35,
+                                size: isTablet ? 45 : 30,
                               ),
                             ),
                           ],
                         ),
-                        const SizedBox(
-                          height: 60,
+                        SizedBox(
+                          height: screenSize.height / 20,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -121,7 +121,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                             ),
                             Text(
                               '+60',
-                              style: TextStyle(fontSize: isTablet ? 33 : 23),
+                              style: TextStyle(fontSize: isTablet ? 33 : 18),
                             ),
                             const Expanded(
                               child: Padding(
@@ -155,17 +155,17 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                             ),
                             Text(
                               'I agree to the terms & conditions.',
-                              style: TextStyle(fontSize: isTablet ? 29 : 19),
+                              style: TextStyle(fontSize: isTablet ? 29 : 16),
                             ),
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(25.0),
+                          padding: const EdgeInsets.all(15.0),
                           child: ElevatedButton(
                               key: const Key("get OTP button"),
                               child: Text(
                                 'Get Activation Code',
-                                style: TextStyle(fontSize: isTablet ? 30 : 20),
+                                style: TextStyle(fontSize: isTablet ? 30 : 15),
                               ),
                               onPressed: () {
                                 Navigator.push(
@@ -186,7 +186,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                         Text(
                           'Disclaimer | Privacy Statement',
                           style: TextStyle(
-                              fontSize: isTablet ? 27 : 17,
+                              fontSize: isTablet ? 27 : 14,
                               decoration: TextDecoration.underline,
                               color: Colors.blue),
                         ),
@@ -199,7 +199,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                         'Copyright UPM & Kejuruteraan Minyak Sawit\nCCS Sdn. Bhd.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: isTablet ? 27 : 17,
+                          fontSize: isTablet ? 27 : 14,
                         )),
                   ),
                 ],
