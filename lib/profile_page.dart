@@ -131,16 +131,12 @@ class _ProfilePageState extends State<ProfilePage> {
                           height: screenSize.height / 8,
                           width: screenSize.width / 3,
                           child: ElevatedButton(
-                            style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.black),
-                              shape: MaterialStateProperty.all(
-                                RoundedRectangleBorder(
-                                  // Change your radius here
-                                  borderRadius: BorderRadius.circular(16),
-                                ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              foregroundColor: Colors.black,
+                              shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.circular(16), // <-- Radius
                               ),
                             ),
                             onPressed: () {
@@ -175,14 +171,11 @@ class _ProfilePageState extends State<ProfilePage> {
                                 isPressed2 = true;
                               });
                             },
-                            style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              shape: MaterialStateProperty.all(
-                                RoundedRectangleBorder(
-                                  // Change your radius here
-                                  borderRadius: BorderRadius.circular(16),
-                                ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.circular(16), // <-- Radius
                               ),
                             ),
                             child: Column(
@@ -425,12 +418,10 @@ class _ProfilePageState extends State<ProfilePage> {
                               height: screenSize.height / 8,
                               width: screenSize.width / 3,
                               child: ElevatedButton(
-                                style: ButtonStyle(
-                                  shape: MaterialStateProperty.all(
-                                    RoundedRectangleBorder(
-                                      // Change your radius here
-                                      borderRadius: BorderRadius.circular(16),
-                                    ),
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.circular(16), // <-- Radius
                                   ),
                                 ),
                                 onPressed: () {
@@ -465,18 +456,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                     isPressed2 = true;
                                   });
                                 },
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStateProperty.all<Color>(
-                                          Colors.white),
-                                  foregroundColor:
-                                      MaterialStateProperty.all<Color>(
-                                          Colors.black),
-                                  shape: MaterialStateProperty.all(
-                                    RoundedRectangleBorder(
-                                      // Change your radius here
-                                      borderRadius: BorderRadius.circular(16),
-                                    ),
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.white,
+                                  foregroundColor: Colors.black,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.circular(16), // <-- Radius
                                   ),
                                 ),
                                 child: Column(
