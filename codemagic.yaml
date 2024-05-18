@@ -40,7 +40,7 @@ workflows:
             --test build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
             --timeout 3m
         
-        artifacts:
+      artifacts:
           - build/**/outputs/**/*.apk
           - build/**/outputs/**/*.aab
           - build/**/outputs/**/mapping.txt
