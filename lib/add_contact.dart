@@ -151,6 +151,7 @@ class _AddContactPageState extends State<AddContactPage> {
                     ),
                     Center(
                       child: ElevatedButton(
+                        key: const Key("submit"),
                         onPressed: () {
                           Navigator.pop(context);
                         },

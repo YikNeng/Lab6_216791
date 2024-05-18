@@ -144,6 +144,7 @@ class _OtpConfirmationState extends State<OtpConfirmation> {
                         ),
                         const SizedBox(height: 10),
                         ElevatedButton(
+                            key: const Key("activate"),
                             child: Text(
                               'Activate',
                               style: TextStyle(fontSize: isTablet ? 30 : 20),

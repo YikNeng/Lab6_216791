@@ -12,9 +12,10 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   int currentIndex = 0;
-  bool isPressed1 = true;
-  bool isPressed2 = false;
+  bool isPressed1 = false;
+  bool isPressed2 = true;
   bool isTablet = false;
+  int added = 0;
 
   _onTap() {
     // this has changed
@@ -389,18 +390,23 @@ class _ProfilePageState extends State<ProfilePage> {
                                 Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: ElevatedButton(
-                                    onPressed: () async {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const AddContactPage(
-                                            isPressed1: true,
-                                            isPressed2: false,
-                                          ),
-                                        ),
-                                      );
-                                    },
+                                    onPressed: added == 0
+                                        ? () async {
+                                            setState(() {
+                                              added = 1;
+                                            });
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const AddContactPage(
+                                                  isPressed1: true,
+                                                  isPressed2: false,
+                                                ),
+                                              ),
+                                            );
+                                          }
+                                        : () {},
                                     child: const Icon(Icons.add),
                                   ),
                                 )

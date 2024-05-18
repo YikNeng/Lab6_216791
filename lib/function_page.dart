@@ -163,6 +163,7 @@ class _FunctionPageState extends State<FunctionPage> {
                           height: screenSize.height / 8,
                           width: screenSize.width / 3,
                           child: ElevatedButton(
+                            key: const Key("factory1 chart"),
                             style: ElevatedButton.styleFrom(
                               shape: RoundedRectangleBorder(
                                 borderRadius:
@@ -422,7 +423,10 @@ class _FunctionPageState extends State<FunctionPage> {
           ),
           BottomNavigationBarItem(
             label: 'Notification',
-            icon: Icon(Icons.notifications, size: isTablet ? 40 : 30),
+            icon: Icon(
+              Icons.notifications,
+              size: isTablet ? 40 : 30,
+            ),
           ),
         ],
         type: BottomNavigationBarType.fixed,

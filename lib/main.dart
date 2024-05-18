@@ -131,6 +131,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                                     top: 8.0,
                                     bottom: 8.0),
                                 child: TextField(
+                                  key: Key("mobile number"),
                                   decoration: InputDecoration(
                                     filled: true,
                                     fillColor: Colors.white,
@@ -161,6 +162,7 @@ class _AccountActivationPageState extends State<AccountActivationPage> {
                         Padding(
                           padding: const EdgeInsets.all(25.0),
                           child: ElevatedButton(
+                              key: const Key("get OTP button"),
                               child: Text(
                                 'Get Activation Code',
                                 style: TextStyle(fontSize: isTablet ? 30 : 20),

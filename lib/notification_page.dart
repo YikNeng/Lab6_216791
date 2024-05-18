@@ -134,6 +134,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                   Padding(
                                     padding: const EdgeInsets.only(right: 10.0),
                                     child: ElevatedButton(
+                                        key: const Key("edit 2"),
                                         onPressed: () {},
                                         child: Icon(
                                           Icons.edit,
@@ -539,6 +540,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                         padding:
                                             const EdgeInsets.only(right: 10.0),
                                         child: ElevatedButton(
+                                            key: const Key("edit 1"),
                                             onPressed: () {},
                                             child: Icon(
                                               Icons.edit,
@@ -586,6 +588,8 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                   .only(
                                                                   bottom: 8.0),
                                                           child: TextField(
+                                                            key: const Key(
+                                                                "steam pressure"),
                                                             textAlign: TextAlign
                                                                 .center,
                                                             style: TextStyle(
@@ -598,16 +602,6 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                     border:
                                                                         InputBorder
                                                                             .none),
-                                                            controller:
-                                                                controller1,
-                                                            onSubmitted:
-                                                                (String value) {
-                                                              setState(() {
-                                                                text1 =
-                                                                    controller1
-                                                                        .text;
-                                                              });
-                                                            },
                                                           ),
                                                         ),
                                                       ),
@@ -667,6 +661,8 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                   .only(
                                                                   bottom: 8.0),
                                                           child: TextField(
+                                                            key: const Key(
+                                                                "steam flow"),
                                                             textAlign: TextAlign
                                                                 .center,
                                                             style: TextStyle(
@@ -679,16 +675,6 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                     border:
                                                                         InputBorder
                                                                             .none),
-                                                            controller:
-                                                                controller2,
-                                                            onSubmitted:
-                                                                (String value) {
-                                                              setState(() {
-                                                                text2 =
-                                                                    controller2
-                                                                        .text;
-                                                              });
-                                                            },
                                                           ),
                                                         ),
                                                       ),
@@ -755,6 +741,8 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                   .only(
                                                                   bottom: 8.0),
                                                           child: TextField(
+                                                            key: const Key(
+                                                                "water level"),
                                                             textAlign: TextAlign
                                                                 .center,
                                                             style: TextStyle(
@@ -769,14 +757,6 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                             .none),
                                                             controller:
                                                                 controller3,
-                                                            onSubmitted:
-                                                                (String value) {
-                                                              setState(() {
-                                                                text3 =
-                                                                    controller3
-                                                                        .text;
-                                                              });
-                                                            },
                                                           ),
                                                         ),
                                                       ),
@@ -835,6 +815,8 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                   .only(
                                                                   bottom: 8.0),
                                                           child: TextField(
+                                                            key: const Key(
+                                                                "power frequency"),
                                                             textAlign: TextAlign
                                                                 .center,
                                                             style: TextStyle(
@@ -847,16 +829,6 @@ class _NotificationPageState extends State<NotificationPage> {
                                                                     border:
                                                                         InputBorder
                                                                             .none),
-                                                            controller:
-                                                                controller4,
-                                                            onSubmitted:
-                                                                (String value) {
-                                                              setState(() {
-                                                                text4 =
-                                                                    controller4
-                                                                        .text;
-                                                              });
-                                                            },
                                                           ),
                                                         ),
                                                       ),
