@@ -27,7 +27,7 @@ workflows:
           ./gradlew app:assembleAndroidTest
           ./gradlew app:assembleDebug -Ptarget="$CM_BUILD_DIR/integration_test/app_test.dart"
 
-      - name: Run Firebase Test Lab Test
+      - name: Run Firebase Test Lab Tests
         script: |
           set -ex
           echo $GCLOUD_KEY_FILE | base64 --decode > ./gcloud_key_file.json
@@ -41,10 +41,10 @@ workflows:
             --timeout 3m
         
     artifacts:
-        - build/**/outputs/**/*.apk
-        - build/**/outputs/**/*.aab
-        - build/**/outputs/**/mapping.txt
-        - flutter_drive.log
+      - build/**/outputs/**/*.apk
+      - build/**/outputs/**/*.aab
+      - build/**/outputs/**/mapping.txt
+      - flutter_drive.log
 
 
 
